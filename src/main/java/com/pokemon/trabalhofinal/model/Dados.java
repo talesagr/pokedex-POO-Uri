@@ -10,5 +10,4 @@ package com.pokemon.trabalhofinal.model;
  */
 public abstract class Dados {
     protected String nome;
-    
 }

@@ -25,9 +25,7 @@ public class PokedexService {
     }
     
     public void verPokedex(){
-        for(int i = 0; i < pokedex.size(); i++){
-            System.out.println(pokedex.get(i).getName());
-        }
+        pokedex.stream().forEachOrdered(p -> System.out.println(p.getName() + " \n"));
     }
     
     public void deletarPokemon(Pokemon pokemon) {

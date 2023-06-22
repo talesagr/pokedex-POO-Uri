@@ -19,7 +19,6 @@ public class PokemonService {
     
     
     public Pokemon cadastrar(String nomeDoPokemon, Type tipoDoPokemon, int pontosDeVida, int ataque, int defesa){
-        
         Pokemon pokemonCadastrado = new Pokemon(nomeDoPokemon, tipoDoPokemon, pontosDeVida,ataque,defesa);
         pokedexService.incluirPokemon(pokemonCadastrado);
         

@@ -17,7 +17,12 @@ public class TrabalhoFinal {
     public static void main(String[] args) {
         PokedexService pok = new PokedexService();
         PokemonService cad = new PokemonService(pok);
+        
         cad.cadastrar("Charizard", Type.Dragão, 10, 1, 2);
+        cad.cadastrar("Pikachu", Type.Elétrico, 8, 2, 1);
+        cad.cadastrar("Bulbasaur", Type.Grama, 7, 3, 2);
+        cad.cadastrar("Gyarados", Type.Água, 9, 2, 3);
+
         pok.verPokedex();
     }
 }
