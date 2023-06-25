@@ -8,10 +8,10 @@ package com.pokemon.trabalhofinal.model;
  *
  * @author tales
  */
-public enum Type {
+public enum PokemonKind {
     Normal,
     Fogo,
-    Água,
+    Agua,
     Elétrico,
     Grama,
     Gelo,
@@ -23,5 +23,5 @@ public enum Type {
     Inseto,
     Pedra,
     Fantasma,
-    Dragão
+    Dragao;
 }
