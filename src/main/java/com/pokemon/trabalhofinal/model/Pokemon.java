@@ -9,12 +9,12 @@ package com.pokemon.trabalhofinal.model;
  * @author tales
  */
 public class Pokemon extends Dados{
-    private Type type;
+    private PokemonKind type;
     private int hp;
     private int atk;
     private int def;
 
-    public Pokemon(String name, Type type, int hp, int atk, int def) {
+    public Pokemon(String name, PokemonKind type, int hp, int atk, int def) {
         this.nome = name;
         this.type = type;
         this.hp = hp;
@@ -26,7 +26,7 @@ public class Pokemon extends Dados{
         return nome;
     }
 
-    public Type getType() {
+    public PokemonKind getType() {
         return type;
     }
 
@@ -46,7 +46,7 @@ public class Pokemon extends Dados{
         this.nome = name;
     }
 
-    public void setType(Type type) {
+    public void setType(PokemonKind type) {
         this.type = type;
     }
 

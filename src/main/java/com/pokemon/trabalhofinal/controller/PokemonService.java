@@ -5,24 +5,24 @@
 package com.pokemon.trabalhofinal.controller;
 
 import com.pokemon.trabalhofinal.model.Pokemon;
-import com.pokemon.trabalhofinal.model.Type;
+import com.pokemon.trabalhofinal.model.PokemonKind;
 
 /**
  *
  * @author tales
  */
 public class PokemonService {
+
     private final PokedexService pokedexService;
+
     public PokemonService(PokedexService pokedexService) {
         this.pokedexService = pokedexService;
     }
-    
-    
-    public Pokemon cadastrar(String nomeDoPokemon, Type tipoDoPokemon, int pontosDeVida, int ataque, int defesa){
-        
-        Pokemon pokemonCadastrado = new Pokemon(nomeDoPokemon, tipoDoPokemon, pontosDeVida,ataque,defesa);
+
+    public Pokemon cadastrar(String nomeDoPokemon, PokemonKind tipoDoPokemon, int pontosDeVida, int ataque, int defesa) {
+        Pokemon pokemonCadastrado = new Pokemon(nomeDoPokemon, tipoDoPokemon, pontosDeVida, ataque, defesa);
         pokedexService.incluirPokemon(pokemonCadastrado);
-        
+
         return pokemonCadastrado;
     }
 }

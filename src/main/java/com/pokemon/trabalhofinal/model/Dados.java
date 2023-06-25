@@ -9,6 +9,6 @@ package com.pokemon.trabalhofinal.model;
  * @author tales
  */
 public abstract class Dados {
+
     protected String nome;
-    
 }
